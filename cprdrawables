@@ -1,0 +1,10 @@
+#! bin/bash
+# rename and copy drawables
+# first argument path of the directory which contains hdp mdpi xhdip xxhdpi xxxdpi
+# second argument desired name of the assest
+mv -v $1/hdpi/* ~/Documents/app_android/app/src/main/res/drawable-hdpi/$2
+mv -v $1/mdpi/* ~/Documents/app_android/app/src/main/res/drawable-mdpi/$2
+mv -v $1/xhdpi/* ~/Documents/app_android/app/src/main/res/drawable-xhdpi/$2
+mv -v $1/xxhdpi/* ~/Documents/app_android/app/src/main/res/drawable-xxhdpi/$2
+mv -v $1/xxxhdpi/* ~/Documents/app_android/app/src/main/res/drawable-xxxhdpi/$2
+echo "------------------Copied Successfully & renamed to $2------------------"

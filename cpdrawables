@@ -1,0 +1,8 @@
+#! /bin/bash
+# copy files
+mv -v $1/hdpi/* ~/Documents/app_android/app/src/main/res/drawable-hdpi
+mv -v $1/mdpi/* ~/Documents/app_android/app/src/main/res/drawable-mdpi
+mv -v $1/xhdpi/* ~/Documents/app_android/app/src/main/res/drawable-xhdpi
+mv -v $1/xxhdpi/* ~/Documents/app_android/app/src/main/res/drawable-xxhdpi
+mv -v $1/xxxhdpi/* ~/Documents/app_android/app/src/main/res/drawable-xxxhdpi
+echo "--------------------Copied Successfully--------------------------"
